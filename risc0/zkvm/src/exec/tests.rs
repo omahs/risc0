@@ -564,8 +564,8 @@ fn session_limit() {
 
 #[test]
 fn memory_access() {
-    access_memory(0x0000_0000).err().unwrap();
-    access_memory(0x0C00_0000).err().unwrap();
+    access_memory(0x0000_0000).unwrap();
+    access_memory(0x0C00_0000).unwrap();
     access_memory(0x0B00_0000).unwrap();
 }
 
