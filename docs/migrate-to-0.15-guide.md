@@ -45,7 +45,7 @@ let env = ExecutorEnv::builder()
 let mut exec = Executor::from_elf(env, PROGRAM_ELF).unwrap();
 ```
 
-You’ll use the `Executor`to generate a `Session`:
+You’ll use the `Executor` to generate a `Session`:
 
 ```bash
 let session = exec.run().unwrap();
